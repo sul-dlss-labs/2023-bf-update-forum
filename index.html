@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jeremy Nelson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02023 BIBFRAME Update Forum - Stanford’s Challenges with FOLIO</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="https://library.stanford.edu"><img src="logo.svg"></a>
+      <h1>Stanford’s Challenges with FOLIO</h1>
+    </header>
+    <div class="intro">
+      <div>
+        <h3>Reasons for Migration</h3>
+        <ul>
+          <li>Current legacy ILS showing its age</li>
+          <li>Collaboration between libraries with a more modern Library Services Platform</li>
+          <li>Opportunity for process improvement</li>
+          <li>Flexibility for integrating current open-source digital repository and discover systems</li>
+          <li>Leadership &amp; Participation FOLIO community</li>
+        </ul>
+      </div>
+      <blockquote>
+        <a href="mailto:jpnelson@stanford.edu">Jeremy Nelson</a>
+        <br>BIBFRAME Update Forum<br>30 January 2023
+      </blockquote>
+    </div>
+    <h2 class="sul">Challenges for Stanford University Libraries and Affiliates</h2>
+    <div class="challenges">
+      <div>
+        <h3 style="text-align: center">Collections Size and Composition 
+        <a href="#" class="toggle"
+           onclick="toggle.call(this, 'stanford-libraries'); return false;">&plus;</a>
+        </h3>
+        <div id="stanford-libraries" style="display: none">
+          <span>
+            <img src="bing_wing_exterior.jpeg" 
+                style="float: right; width: 70%"
+                alt="Green Bing Wing"
+                title="Green Library by Katie Long">
+          </span>
+          <p>
+            With over 10+ million monographs, serials, and other cataloged resources including over 3 million objects
+            actively managed in our digital repository, Stanford University Libraries includes the following branch
+            and affiliate libraries:
+          </p>
+          <ul>
+            <li><a href="https://library.stanford.edu/libraries/branner/about">Branner Earth Sciences Library</a></li>
+            <li><a href="https://library.stanford.edu/libraries/business/about">Business Library</a></li>
+            <li><a href="https://library.stanford.edu/libraries/cubberley/about">Cubberley Education Library</a></li>
+            <li><a href="https://library.stanford.edu/eal">East Asia Library</a></li>
+            <li><a href="https://library.stanford.edu/englib">Terman Engineering Library</a></li>
+            <li><a href="https://library.stanford.edu/green">Cecil H. Green Library (main)</a></li>
+            <li><a href="https://library.stanford.edu/libraries/music/about">Music Library</a></li>
+            <li><a href="https://library.stanford.edu/libraries/sal/about">Stanford Auxiliary Libraries (Remote Storage)</a></li>
+            <li><a href="https://library.stanford.edu/science">Science Library</a></li>
+            <li><a href="https://library.stanford.edu/spc">Special Collections & University Archives</a></li>
+          </ul>
+          Consortial and Special Libraries
+          <ul>
+            <li><a href="https://library.stanford.edu/rumsey">David Rumsey Map Center</a></li>
+            <li><a href="https://library.stanford.edu/hopkins">Harold A. Miller Marine Biology Library at Hopkins Marine Station</a></li>
+            <li><a href="https://www.hoover.org/library-archives">Hoover Institution Library & Archives</a></li>
+            <li><a href="http://lane.stanford.edu/">Lane Medical Library</a></li>
+            <li><a href="http://law.stanford.edu/library">Robert Crown Law Library</a></li>
+            <li><a href="http://www.slac.stanford.edu/library">SLAC National Accelerator Lab Research Library</a>
+          </ul>
+        </div>
+      </div>
+      <div>  
+        <h3 style="text-align: center">Complexity of Workflows
+          <a href="#" class="toggle"
+          onclick="toggle.call(this, 'workflows'); return false;">&plus;</a>
+       </h3>
+        </h3>
+        <div id="workflows" style="display: none">
+
+          <h4>Existing workflows</h4>
+          <ul>
+            <li>Acquisitions, Circulation, and Technical Services</li>
+            <li>Analysis and Surveys</li>
+          </ul>
+          <a href="requirements-spreadsheet.png" target="_blank">
+            <img src="requirements-spreadsheet.png" 
+                 alt="Stanford Library Management Systems Requirements Spreadsheet"
+                 style="width: 90%"
+                 title="Screenshot of Requirements Spreadsheet for Stanford">
+          </a>
+          <h4>Connections to External Systems</h4>
+          <a href="Symphony-Integration-Diagram.png" target="_blank">
+            <img src="Symphony-Integration-Diagram.png" alt="Existing ILS Integrations" >
+          </a>
+          <a href="connections-other-systems.jpg" target="_blank">
+            <img src="connections-other-systems.jpg" alt="FOLIO Connections to Other Systems" style="width: 70%"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="challenges">
+      <div>
+        <h3 style="text-align: center">New Technology Stacks and Approaches
+          <a href="#" class="toggle"
+          onclick="toggle.call(this, 'new-tech'); return false;">&plus;</a>
+        </h3>
+        <div id="new-tech" style="display: none">
+          <p>
+            Moving from our legacy commercial ILS systems that we run on-site that is a typical enterprise 
+            <em>monolith</em> enterprise system backed by an Oracle database.
+          </p>
+          <a href="Symphony-Integration-Diagram.png" target="_blank">
+            <img src="Symphony-Integration-Diagram.png" alt="Existing ILS Integrations" >
+          </a>
+          <img src="kubernetes.png" alt="Kubernetes Logo" style="float: right">
+          <p>
+            To FOLIO's <em>microservices</em> infrastructure
+            using Kubernetes requires new hardware, software, and expertise that is be developed among the library's
+            systems and operations groups.  
+          </p>
+          <a href="FolioHLA.jpeg" target="_blank">
+            <img src="FolioHLA.jpeg" alt="High level architecture diagram" style="width: 80%" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 style="text-align: center">Gaps in FOLIO Functionality and Documentation
+          <a href="#" class="toggle"
+          onclick="toggle.call(this, 'folio-gaps'); return false;">&plus;</a>
+        </h3>
+        <div id="folio-gaps" style="display: none">
+          <ul>
+            <li>Authority Control (starting but not there yet)</li>
+            <li>Deleting Bibliographic Records through the UI</li>
+            <li>Link resolver integration</li>
+            <li>Integrated Reporting</li>
+            <li>Consortial features</li>
+            <li>Ability to integrate with external systems including Chat apps, external search engines, course reserves, Canvas, ERMs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h2 class="sul">Meeting these Challenges</h2> 
+    <h3 style="text-align: center;">By Planning
+      <a href="#" class="toggle"
+        onclick="toggle.call(this, 'project-plan'); return false;">&plus;</a>
+    </h3>
+    <div id="project-plan" style="display: none">
+      <p>
+        From Stanford's internal Miro board, we have a detailed project work plan spanning the last
+        couple of years as we move towards migrating to FOLIO. 
+      </p>
+      <a href="project-work-plan.jpg" target="_blank" style="text-align: center">
+        <img src="project-work-plan.jpg" alt="Stanford FOLIO Project Work Plan" style="width: 80%" />
+      </a>
+    </div>
+    <h3 style="text-align: center;">&hellip; but more importantly People!
+      <a href="#" class="toggle"
+      onclick="toggle.call(this, 'people'); return false;">&plus;</a>
+    </h3>
+    <div style="display: none" id="people">
+      <div class="challenges">
+          <div>
+            <img src="folio-stanford-people.jpg" alt="Core Team at Stanford" style="width: 90%">
+          </div>
+          <div>
+            <p>
+              The FOLIO Implementation at Stanford involves the efforts and talents of 
+              numerous individuals and groups, coordinated by project lead Michelle 
+              Futornick. 
+            </p>
+            <h4>Internal Committees &amp; Working Groups</h4>
+            <ul>
+              <li>Acquisitions Subgroup</li>
+              <li>Circ Settings and Policies Subgroup</li>
+              <li>Course reserves subgroup</li>
+              <li>Electronic Resources Subgroups</li>
+              <li>Implementation Group</li>
+              <li>Metadata Subgroup</li>
+              <li>Permissions Subgroup</li>
+              <li>Print Serials Subgroup</li>
+              <li>Reporting Subgroup</li>
+              <li>Testing Subgroup</li>
+              <li>Training Subgroup</li>
+            </ul>
+            <h4>Stanford's Participation in FOLIO Committees and Special Interest Groups (SIGs)</h4>
+            <ul>
+              <li>Acquisitions SIG</li>
+              <li>Bulk Edit Working Group</li>
+              <li>Community Council</li>
+              <li>Consortia SIG</li>
+              <li>Data Import app subgroup </li>
+              <li>Data Migration Subgroup</li>
+              <li>ERM SIG</li>
+              <li>Entity Management</li>
+              <li>FOLIO Implementation Group</li>
+              <li>LDP User Group </li>
+              <li>Metadata Management SIG</li>
+              <li>Product Council</li>
+              <li>quickMARC Subgroup</li>
+              <li>Reporting SIG</li>
+              <li>Resource Access SIG</li>
+              <li>SysOps SIG</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="challenges">
+      <div>
+        <h3 style="text-align: center">Technology
+          <a href="#" class="toggle"
+          onclick="toggle.call(this, 'our-tech'); return false;">&plus;</a>
+        </h3>
+        <div id="our-tech" style="display: none">
+          <a href="https://airflow.apache.org/">
+            <img src="apache-airflow.png" alt="Apache Airflow" style="float: right; width: 25%">
+          </a>
+          <a href="https://miro.com/"><img src="Miro.png" alt="Miro Logo" style="float:left; width: 30%;"></a>
+          <p>
+            To help in the migration to FOLIO, Stanford uses a wide range of different technologies,
+            from office productivity like <a href="https://docs.google.com/">Google docs</a>, 
+            project management tools like <a href="https://miro.com/">Miro</a>, to workflow management
+            with <a href="https://airflow.apache.org/">Apache Airflow</a>.
+          </p>
+          <h4>Internal Software Engineering &amp; Operations</h4>
+          <p>
+            A significant advantage we have Stanford is our deep and talented engineering teams for 
+            our Discover System (<a href="https://searchworks.stanford.edu/">Searchworks</a>), our
+            digital repository infrastructure team, and the team responsible for migrating to FOLIO, 
+            our library systems team. Supporting these efforts is our Library's operations team that 
+            provides and manages the infrastructure for hosting FOLIO and these other services.
+          </p>
+          <img src="searchworks.png" alt="Stanford Online Catalog Searchworks" style="width: 70%;">
+        </div>
+      </div>
+      <div>
+        <h3 style="text-align: center">Future
+          <a href="#" class="toggle"
+          onclick="toggle.call(this, 'future'); return false;">&plus;</a>
+        </h3>
+        <div id="future" style="display: none">
+          <h4>Live on FOLIO - Summer 2023!</h4>
+          <img src="folio-test.png" alt="Stanford's FOLIO Test Environment" style="width: 90%">
+          <h4>Linked Data Cataloging with Sinopia &amp; FOLIO</h4>
+          <img src="sinopia.png" alt="Sinopia Linked Data Editor" style="width: 90%">
+          <h4>Machine Learning Applications?!?</h4>
+        </div>
+      </div>
+    </div>
+   <footer>
+     &copy; 2023 all content licenses under
+     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+       <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+     
+   </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

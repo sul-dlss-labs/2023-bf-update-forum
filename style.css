@@ -1,0 +1,102 @@
+body {
+  font-family: Source Sans Pro, Helvetica;
+  font-size: 1.25em;
+}
+
+header {
+  background-color: #820000;
+  color: #FFFFFF;
+  padding-left: .5em;
+}
+
+blockquote {
+  border: 2px dotted #8C1515;
+  background-color: #D2C295;
+  height: 4em;
+  width: 300px;
+  text-align: center;
+  padding: 2%;
+}
+
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+.sul {
+  text-align: center;
+  background-color: #EEEEEE;
+  border: 1px solid #a7adba;
+  border-radius: 10px;
+  padding-top: .1em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+footer {
+  background-color: #820000;
+  color: #FFFFFF;
+  height: 50px;
+  padding-left: .25em;
+  padding-top: .5em;
+
+}
+
+a.toggle {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer a {
+  color: #FFFFFF;
+}
+
+pre {
+  border: 1px solid black;
+  background-color: #E5E8EC;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: .25em;
+  width: 75%;
+}
+
+.challenges {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 10px;
+}
+
+.intro a {
+  text-decoration: none;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 10px;
+}
+
+
+.topic-btn {
+  background-color: #A1A5D5;
+  color: #FFFFFF;
+  margin: 1em;
+  padding: .25em;
+  text-decoration: none;
+}
+
+.topics {
+  border: 2px solid #10359A;
+}
